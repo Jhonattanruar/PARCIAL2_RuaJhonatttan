@@ -9,6 +9,12 @@ namespace PARCIAL2_RuaJhonattan.DAL
         {
             
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<PersonaNatural>().HasIndex(c => c.FullName).IsUnique();
+        }
         public DbSet<PersonaNatural> PersonaNaturals { get; set; }
         
     }
