@@ -100,6 +100,8 @@ namespace PARCIAL2_RuaJhonattan.Controllers
             {
                 try
                 {
+                    
+                    
                     _context.Update(personaNatural);
                     await _context.SaveChangesAsync();
                 }
@@ -160,5 +162,8 @@ namespace PARCIAL2_RuaJhonattan.Controllers
         {
           return (_context.PersonaNaturals?.Any(e => e.Id == id)).GetValueOrDefault();
         }
+
+       
+
     }
 }

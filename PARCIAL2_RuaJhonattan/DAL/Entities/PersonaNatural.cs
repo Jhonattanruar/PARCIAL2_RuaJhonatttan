@@ -5,6 +5,7 @@ namespace PARCIAL2_RuaJhonattan.DAL.Entities
 {
     public class PersonaNatural : Entity
     {
+        
         [Display(Name ="Full Name")]
         [MaxLength(100, ErrorMessage="El campo {0} debe tener maximo {1} caracteres.")]
         [Required(ErrorMessage = "¡El campo {0} es requerido!")]
